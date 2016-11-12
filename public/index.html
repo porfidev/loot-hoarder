@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="loothoader">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola Express</title>
+</head>
+<body>
+
+<code>Pusher testing...</code>
+
+{{ 'hola ' + 'mundo'}}
+
+<script src="lib/angular.js"></script>
+<script src="modules/main.js"></script>
+<script src="https://js.pusher.com/3.2/pusher.min.js"></script>
+<script>
+
+    // Enable pusher logging - don't include this in production
+    Pusher.logToConsole = true;
+
+    var pusher = new Pusher('27f4c767b00d761a5c0c', {
+        encrypted: true
+    });
+
+    var channel = pusher.subscribe('test_channel');
+    channel.bind('my_event', function(data) {
+        console.info(data);
+    });
+</script>
+</body>
+</html>

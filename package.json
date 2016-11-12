@@ -1,0 +1,21 @@
+{
+  "name": "loothoarder",
+  "version": "1.0.0",
+  "description": "Alicación para interactuar con otros usuarios de la comunidad de Hearthstone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "Porfirio Chavez <elporfirio@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "express": "^4.14.0",
+    "pusher": "^1.5.0"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1"
+  }
+}
