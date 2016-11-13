@@ -28,9 +28,9 @@ pusher.trigger('test_channel', 'my_event', {
     "message": "hello world"
 });
 
-setInterval(function(){
-    pusher.trigger('test_channel', 'my_event', {
-        "message": "Welcome to the jungle",
-        "heartstone": "elporfirio#1234"
-    });
-}, 3000);
+// setInterval(function(){
+//     pusher.trigger('test_channel', 'my_event', {
+//         "message": "Welcome to the jungle",
+//         "heartstone": "elporfirio#1234"
+//     });
+// }, 3000);
