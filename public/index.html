@@ -5,6 +5,8 @@
     <title>Hola Express</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!-- inject:css -->
+    <!-- endinject -->
 </head>
 <body>
 
@@ -12,24 +14,31 @@
 
 <ui-view></ui-view>
 
+
+
 <script src="lib/angular.js"></script>
 <script src="lib/angular-ui-router.js"></script>
-<script src="modules/main.js"></script>
-<script src="modules/router.js"></script>
+
+<!-- inject:js -->
+<script src="/modules/main.js"></script>
+<script src="/modules/router.js"></script>
+<script src="/modules/Register/register.controller.js"></script>
+<!-- endinject -->
+
 <script src="https://js.pusher.com/3.2/pusher.min.js"></script>
 <script>
 
     // Enable pusher logging - don't include this in production
-    Pusher.logToConsole = true;
-
-    var pusher = new Pusher('27f4c767b00d761a5c0c', {
-        encrypted: true
-    });
-
-    var channel = pusher.subscribe('test_channel');
-    channel.bind('my_event', function(data) {
-        console.info(data);
-    });
+//    Pusher.logToConsole = true;
+//
+//    var pusher = new Pusher('27f4c767b00d761a5c0c', {
+//        encrypted: true
+//    });
+//
+//    var channel = pusher.subscribe('test_channel');
+//    channel.bind('my_event', function(data) {
+//        console.info(data);
+//    });
 </script>
 </body>
 </html>

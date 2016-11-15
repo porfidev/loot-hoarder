@@ -18,7 +18,9 @@ angular.module('loothoader')
         var mainState = {
             name: 'main',
             url: '/main',
-            templateUrl: 'modules/Register/register.template.html'
+            templateUrl: 'modules/Register/register.template.html',
+            controller: 'registerController',
+            controllerAs: 'regctrl'
         };
 
         $stateProvider.state(helloState);
